@@ -76,4 +76,18 @@ test('Should throw error on invalid input', t => {
 		instanceOf: Error,
 		message: '"bad" is not a valid roll'
 	});
+
+	t.throws(() => {
+		return roll('1d');
+	}, {
+		instanceOf: Error,
+		message: '"1d" is not a valid roll'
+	});
+
+	t.throws(() => {
+		return roll('3');
+	}, {
+		instanceOf: Error,
+		message: '"3" is not a valid roll'
+	});
 });
