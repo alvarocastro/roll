@@ -8,18 +8,10 @@ const rollDice = function (sides) {
 const parseDice = function (diceString) {
 	const re = /(\d*)d(\d+|%)/;
 	const [, countString, sidesString] = re.exec(diceString);
-	const count = countString ? Number(countString) : 1;
-	let sides = 6;
-
-	if (sidesString === '%') {
-		sides = 100;
-	} else if (sidesString) {
-		sides = Number(sidesString);
-	}
 
 	return {
-		sides,
-		count
+		sides: sidesString === '%' ? 100 : Number(sidesString),
+		count: countString ? Number(countString) : 1
 	};
 };
 
