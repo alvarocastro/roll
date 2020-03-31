@@ -22,5 +22,9 @@
     "coveralls": "^3.0.11",
     "nyc": "^15.0.0",
     "xo": "^0.28.1"
+  },
+  "dependencies": {
+    "@alvarocastro/round": "^1.0.0",
+    "math-expression-evaluator": "^1.2.22"
   }
 }
