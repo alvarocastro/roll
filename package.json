@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/alvarocastro/roll/issues"
   },
+  "engines": {
+    "node": "10 || >=12"
+  },
   "homepage": "https://github.com/alvarocastro/roll#readme",
   "devDependencies": {
     "ava": "^3.5.2",
