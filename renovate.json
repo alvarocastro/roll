@@ -6,7 +6,6 @@
     "enabled": true
   },
   "supportPolicy": [
-    "active",
-    "current"
+    "lts_active"
   ]
 }
