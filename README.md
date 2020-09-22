@@ -29,10 +29,13 @@ const roll = require('@alvarocastro/roll');
 
 roll('1d6');
 // => 3
+
 roll('2d8');
 // => 11
+
 roll('1d3+1d6');
 // => 7
+
 roll('4+3d10/1d6');
 // => 6.33333
 ```
@@ -52,6 +55,7 @@ Rolls to make in the form of `AdX` supporting basic mathematical expressions.
 Type: `Function`
 
 Function called for every sub roll made, it receives the sub roll string as first parameter and an array of roll results as second parameter.
+
 ```js
 roll('2d6+1d8', (roll, results) => {
 	console.log(roll, results);
