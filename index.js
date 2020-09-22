@@ -39,9 +39,10 @@ const roll = function (rollString, rollCallback = () => {}) {
 	return round(result);
 };
 
-roll.detailed = function (rollString) {
+roll.detailed = function (rollString, rollCallback = () => {}) {
 	const rolls = [];
 	const result = roll(rollString, (roll, result) => {
+		rollCallback(roll, result);
 		rolls.push({
 			roll,
 			result
