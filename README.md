@@ -7,7 +7,7 @@
 [![Bundle Size](https://badgen.net/bundlephobia/min/@alvarocastro/roll)](https://bundlephobia.com/result?p=@alvarocastro/roll)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
- 
+
 Library to parse and roll dices from a string as an `AdX` dice notation roll, like `1d6`, supporting simple transforms like `2d10+5`, or more complex like `1d8-1d6/2`.
 
 - [Install](#install)
